@@ -4,8 +4,8 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment version="4368" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -234,10 +234,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="eoc-1f-q5i">
-                                <rect key="frame" x="10" y="98" width="355" height="100"/>
+                                <rect key="frame" x="10" y="98.000000000000028" width="355" height="324.66666666666674"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter car name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tU9-y4-Nqe">
-                                        <rect key="frame" x="118.33333333333334" y="0.0" width="118.66666666666666" height="30"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter car name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tU9-y4-Nqe">
+                                        <rect key="frame" x="10" y="0.0" width="335" height="105"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -245,26 +245,40 @@
                                             <action selector="field1:" destination="Zy0-rO-WJJ" eventType="editingDidEnd" id="2Z5-nv-pze"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a short description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HY2-qq-AeM">
-                                        <rect key="frame" x="87.333333333333329" y="35" width="180.66666666666669" height="30"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a short description" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HY2-qq-AeM">
+                                        <rect key="frame" x="10" y="110" width="335" height="104.66666666666669"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ase-9c-iUK">
-                                        <rect key="frame" x="160.66666666666666" y="70" width="34" height="30"/>
+                                        <rect key="frame" x="10" y="219.66666666666669" width="335" height="105"/>
                                         <state key="normal" title="Save"/>
                                         <connections>
                                             <action selector="saveButton:" destination="gdI-ou-az5" eventType="touchUpInside" id="K8I-jx-cLn"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="ase-9c-iUK" firstAttribute="top" secondItem="HY2-qq-AeM" secondAttribute="bottom" constant="5" id="3YH-xU-b1l"/>
+                                    <constraint firstItem="tU9-y4-Nqe" firstAttribute="top" secondItem="eoc-1f-q5i" secondAttribute="top" id="Ou7-vb-kCJ"/>
+                                    <constraint firstItem="ase-9c-iUK" firstAttribute="top" secondItem="HY2-qq-AeM" secondAttribute="bottom" constant="5" id="P6T-zu-lmz"/>
+                                    <constraint firstItem="tU9-y4-Nqe" firstAttribute="leading" secondItem="eoc-1f-q5i" secondAttribute="leading" constant="10" id="S58-pE-MsZ"/>
+                                    <constraint firstItem="HY2-qq-AeM" firstAttribute="top" secondItem="tU9-y4-Nqe" secondAttribute="bottom" constant="5" id="U8H-br-hoX"/>
+                                    <constraint firstItem="HY2-qq-AeM" firstAttribute="top" secondItem="tU9-y4-Nqe" secondAttribute="bottom" constant="5" id="btb-Qq-bVO"/>
+                                    <constraint firstItem="ase-9c-iUK" firstAttribute="leading" secondItem="eoc-1f-q5i" secondAttribute="leading" constant="10" id="bzl-rI-Bh3"/>
+                                    <constraint firstItem="HY2-qq-AeM" firstAttribute="leading" secondItem="eoc-1f-q5i" secondAttribute="leading" constant="10" id="igW-7v-afS"/>
+                                    <constraint firstAttribute="trailing" secondItem="ase-9c-iUK" secondAttribute="trailing" constant="10" id="kOh-BF-8jo"/>
+                                    <constraint firstAttribute="trailing" secondItem="tU9-y4-Nqe" secondAttribute="trailing" constant="10" id="oGM-yi-ME7"/>
+                                    <constraint firstAttribute="trailing" secondItem="HY2-qq-AeM" secondAttribute="trailing" constant="10" id="q09-SN-lUd"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="eoc-1f-q5i" firstAttribute="leading" secondItem="7K5-Un-uad" secondAttribute="leading" constant="10" id="20U-hX-XY4"/>
                             <constraint firstAttribute="trailing" secondItem="eoc-1f-q5i" secondAttribute="trailing" constant="10" id="U1A-wb-Lac"/>
+                            <constraint firstItem="eoc-1f-q5i" firstAttribute="height" secondItem="7K5-Un-uad" secondAttribute="height" multiplier="0.4" id="eHu-KD-wcp"/>
                             <constraint firstItem="eoc-1f-q5i" firstAttribute="top" secondItem="aH4-iQ-4GP" secondAttribute="bottom" constant="10" id="pzb-hY-pIT"/>
                         </constraints>
                     </view>
