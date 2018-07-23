@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment version="4400" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -233,11 +234,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="eoc-1f-q5i">
-                                <rect key="frame" x="10" y="98.000000000000028" width="355" height="324.66666666666674"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7I6-3T-Jln">
+                                <rect key="frame" x="5" y="97.999999999999986" width="365" height="243.66666666666663"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter car name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tU9-y4-Nqe">
-                                        <rect key="frame" x="10" y="0.0" width="335" height="105"/>
+                                        <rect key="frame" x="10" y="0.0" width="345" height="78"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -245,14 +246,14 @@
                                             <action selector="field1:" destination="Zy0-rO-WJJ" eventType="editingDidEnd" id="2Z5-nv-pze"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a short description" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HY2-qq-AeM">
-                                        <rect key="frame" x="10" y="110" width="335" height="104.66666666666669"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="entwr a simple description" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HY2-qq-AeM">
+                                        <rect key="frame" x="10" y="83" width="345" height="77.666666666666686"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ase-9c-iUK">
-                                        <rect key="frame" x="10" y="219.66666666666669" width="335" height="105"/>
+                                        <rect key="frame" x="10" y="165.66666666666669" width="345" height="78"/>
                                         <state key="normal" title="Save"/>
                                         <connections>
                                             <action selector="saveButton:" destination="gdI-ou-az5" eventType="touchUpInside" id="K8I-jx-cLn"/>
@@ -260,26 +261,23 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="ase-9c-iUK" firstAttribute="top" secondItem="HY2-qq-AeM" secondAttribute="bottom" constant="5" id="3YH-xU-b1l"/>
-                                    <constraint firstItem="tU9-y4-Nqe" firstAttribute="top" secondItem="eoc-1f-q5i" secondAttribute="top" id="Ou7-vb-kCJ"/>
-                                    <constraint firstItem="ase-9c-iUK" firstAttribute="top" secondItem="HY2-qq-AeM" secondAttribute="bottom" constant="5" id="P6T-zu-lmz"/>
-                                    <constraint firstItem="tU9-y4-Nqe" firstAttribute="leading" secondItem="eoc-1f-q5i" secondAttribute="leading" constant="10" id="S58-pE-MsZ"/>
-                                    <constraint firstItem="HY2-qq-AeM" firstAttribute="top" secondItem="tU9-y4-Nqe" secondAttribute="bottom" constant="5" id="U8H-br-hoX"/>
-                                    <constraint firstItem="HY2-qq-AeM" firstAttribute="top" secondItem="tU9-y4-Nqe" secondAttribute="bottom" constant="5" id="btb-Qq-bVO"/>
-                                    <constraint firstItem="ase-9c-iUK" firstAttribute="leading" secondItem="eoc-1f-q5i" secondAttribute="leading" constant="10" id="bzl-rI-Bh3"/>
-                                    <constraint firstItem="HY2-qq-AeM" firstAttribute="leading" secondItem="eoc-1f-q5i" secondAttribute="leading" constant="10" id="igW-7v-afS"/>
-                                    <constraint firstAttribute="trailing" secondItem="ase-9c-iUK" secondAttribute="trailing" constant="10" id="kOh-BF-8jo"/>
-                                    <constraint firstAttribute="trailing" secondItem="tU9-y4-Nqe" secondAttribute="trailing" constant="10" id="oGM-yi-ME7"/>
-                                    <constraint firstAttribute="trailing" secondItem="HY2-qq-AeM" secondAttribute="trailing" constant="10" id="q09-SN-lUd"/>
+                                    <constraint firstItem="ase-9c-iUK" firstAttribute="leading" secondItem="7I6-3T-Jln" secondAttribute="leading" constant="10" id="34L-6Q-0hg"/>
+                                    <constraint firstItem="tU9-y4-Nqe" firstAttribute="leading" secondItem="7I6-3T-Jln" secondAttribute="leading" constant="10" id="3kH-ZA-HrD"/>
+                                    <constraint firstAttribute="trailing" secondItem="HY2-qq-AeM" secondAttribute="trailing" constant="10" id="Cgw-e7-2Sy"/>
+                                    <constraint firstAttribute="trailing" secondItem="ase-9c-iUK" secondAttribute="trailing" constant="10" id="CxY-NR-317"/>
+                                    <constraint firstItem="tU9-y4-Nqe" firstAttribute="top" secondItem="7I6-3T-Jln" secondAttribute="top" id="GfQ-qr-hht"/>
+                                    <constraint firstAttribute="trailing" secondItem="tU9-y4-Nqe" secondAttribute="trailing" constant="10" id="jlS-GS-bRW"/>
+                                    <constraint firstItem="HY2-qq-AeM" firstAttribute="leading" secondItem="7I6-3T-Jln" secondAttribute="leading" constant="10" id="sZC-an-Irf"/>
+                                    <constraint firstAttribute="bottom" secondItem="ase-9c-iUK" secondAttribute="bottom" id="swT-yq-PP6"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="eoc-1f-q5i" firstAttribute="leading" secondItem="7K5-Un-uad" secondAttribute="leading" constant="10" id="20U-hX-XY4"/>
-                            <constraint firstAttribute="trailing" secondItem="eoc-1f-q5i" secondAttribute="trailing" constant="10" id="U1A-wb-Lac"/>
-                            <constraint firstItem="eoc-1f-q5i" firstAttribute="height" secondItem="7K5-Un-uad" secondAttribute="height" multiplier="0.4" id="eHu-KD-wcp"/>
-                            <constraint firstItem="eoc-1f-q5i" firstAttribute="top" secondItem="aH4-iQ-4GP" secondAttribute="bottom" constant="10" id="pzb-hY-pIT"/>
+                            <constraint firstItem="7I6-3T-Jln" firstAttribute="height" secondItem="7K5-Un-uad" secondAttribute="height" multiplier="0.3" id="0M2-aQ-pzS"/>
+                            <constraint firstAttribute="trailing" secondItem="7I6-3T-Jln" secondAttribute="trailing" constant="5" id="Dnd-UR-cRt"/>
+                            <constraint firstItem="7I6-3T-Jln" firstAttribute="top" secondItem="aH4-iQ-4GP" secondAttribute="bottom" constant="10" id="PdZ-xl-GrW"/>
+                            <constraint firstItem="7I6-3T-Jln" firstAttribute="leading" secondItem="7K5-Un-uad" secondAttribute="leading" constant="5" id="mzJ-51-Rer"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="ADD entry" id="ZGJ-BT-7O9"/>
