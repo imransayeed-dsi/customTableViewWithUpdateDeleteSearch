@@ -8,7 +8,7 @@
 
 import UIKit
 var car = ["Car", "Race","Win"]
-var des = ["This is a demo description","Only for fun","This is another description"]
+var des = ["Demo description","Only for fun","This is another description dsfdsfsdfsdfdsfsdfsdfsjsdfkskfksbfkjsdbfksfbks"]
 var myIndex = 0
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate,UISearchBarDelegate {
     
@@ -124,8 +124,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         //cell.myLabel.text = animals[indexPath.row]
             //cell?.myLabel.text = car[indexPath.row]
-            cell.myLabel2.text = "Good car"
-            cell.myLabel3.text = "Beautiful"
+            cell.myLabel2.text = "Available"
+            //cell.myLabel3.text = "Beautiful"
+            cell.myLabel3.text = des[indexPath.row]
             
         }
         else {
@@ -136,9 +137,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             
             //cell.myLabel.text = animals[indexPath.row]
             //cell?.myLabel.text = car[indexPath.row]
-            cell.myLabel2.text = "Good car"
-            cell.myLabel3.text = "Beautiful"
-           
+            cell.myLabel2.text = "Available"
+            //cell.myLabel3.text = "Beautiful"
+            cell.myLabel3.text = des[indexPath.row]
+            
             }
             return (cell)
         }else {
