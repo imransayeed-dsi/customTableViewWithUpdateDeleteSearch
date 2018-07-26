@@ -8,13 +8,62 @@
 
 import UIKit
 var car = ["Car", "Race","Win"]
-var des = ["Demo description","Only for fun","This is another description dsfdsfsdfsdfdsfsdfsdfsjsdfkskfksbfkjsdbfksfbks"]
-var myIndex = 0
+var des = ["Demo description","Only for fun","This is another description dsfdsfsdfsdfdsfsdfsdfsjsdf"]
+var myIndex: Int? = 0
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate,UISearchBarDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     //let animals = ["Panda", "Lion", "Elefant"]
+    
+   /* @IBAction func editModeOn(_ sender: Any) {
+        let click = addViewController()
+        var _: Bool
+        click.fiEld1.text = car[myIndex]
+        click.fiEld2.text = des[myIndex]
+        click.saveButton(true as AnyObject)
+    }*/
+    //var c = 0
+    /*@IBAction func editOn(_ sender: Any) {
+        //performSegue(withIdentifier: "edit", sender: self)
+        //let num: Int? = 1
+         //c = 1
+        //prepare(for: <#T##UIStoryboardSegue#>, sender: <#T##Any?#>)
+        self.performSegue(withIdentifier: "edit", sender: self)
+        /*let click = addViewController()
+        //click.viewDidLoad.editBegin()
+        let indexPath = self.tableView.indexPathForSelectedRow
+        myIndex! = (indexPath?.row)!
+        click.editStart(self)
+        
+        //click.sometHing = car
+            //click.someDescription = des
+        
+        
+        tableView.reloadData()
+        //navigationController?.pushViewController(click, animated: true)*/
+        
+    }*/
+   
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if (segue.identifier == "edit") {
+            let c: Int? = 1
+            //let indexPath = self.tableView.indexPathForSelectedRow
+           // myIndex! = (indexPath?.row)!
+            let click = segue.destination as! addViewController
+            click.isEditOn = c
+            //click.fiEld1.text! = car[myIndex!]
+            //click.fiEld2.text! = des[myIndex!]
+            //click.sometHing.append( car[myIndex!])
+            //click.someDescription[myIndex!] = des[myIndex!]
+        }
+        else if (segue.identifier == "addEntry") {
+            let c1: Int? = 0
+            let ck = segue.destination as! addViewController
+            ck.isEditOn = c1
+        }
+    }
     
     var filteredData = [String]()
     
@@ -188,7 +237,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             let planetToDelete = car[indexPath.row]
             confirmDelete(planet: planetToDelete)
         }
-    }
+            }
     
     // Delete Confirmation and Handling
     func confirmDelete(planet: String) {

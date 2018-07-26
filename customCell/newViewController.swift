@@ -19,9 +19,9 @@ class newViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        titleLabel.text = car[myIndex]
-        newImageview.image = UIImage(named: car[myIndex])
-        desLabel.text = des[myIndex]
+        titleLabel.text = car[myIndex!]
+        newImageview.image = UIImage(named: car[myIndex!])
+        desLabel.text = des[myIndex!]
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

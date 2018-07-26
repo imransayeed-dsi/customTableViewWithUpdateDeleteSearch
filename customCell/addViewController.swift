@@ -10,17 +10,67 @@ import UIKit
 
 class addViewController: UIViewController {
     @IBOutlet weak var fiEld1: UITextField!
-    
+    var sometHing = [String]()
+    var someDescription = [String]()
+    //var sometHing: String = ""
+    //var someDescription: String = ""
     @IBOutlet weak var fiEld2: UITextField!
+    var isEditOn: Int?
+   // func editStart(_ sender: Any){
+   //     sometHing[myIndex!] = car [myIndex!]
+   //     someDescription[myIndex!] = des[myIndex!]
+   // }
+   /* public func editBegin( num: Int?) -> Int? {
+        //isEditOn = num
+        //_ = num
+        //print(isEditOn!)
+        //print(isEditOn!,"ok")
+        return num!
+    }*/
+    
+    /*@IBAction func editBegin(_ sender: Any) {
+        isEditOn = true
+        fiEld1.text = car[myIndex]
+        fiEld2.text = des[myIndex]
+    }*/
+    
+    /*@IBAction func editBegin(_ sender: Any) {
+        isEditOn = true
+        fiEld1.text = car[myIndex]
+        fiEld2.text = des[myIndex]*/
+    
+    /*@IBAction func editBegin(_ sender: Any, forEvent event: UIEvent) {
+        isEditOn = true
+        fiEld1.text = car[myIndex]
+        fiEld2.text = des[myIndex]
+    }*/
+    //func editBegin(_ sender: AnyObject) {
+      //  fiEld1.text! = car[myIndex!]
+     //   fiEld2.text! = des[myIndex!]
+    //}
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        if isEditOn == 1{
+        fiEld1!.text = car[myIndex!]
+            fiEld2!.text = des[myIndex!]
+            
+        }
+        
+        //fiEld1!.text = sometHing[myIndex!]
+            //fiEld2.text! = someDescription[myIndex!]
+            
+        
+        
     }
     @IBAction func saveButton(_ sender: AnyObject) {
-        car.append(fiEld1.text!)
-        des.append(fiEld2.text!)
-        print(car)
+            if isEditOn == 1{
+            car[myIndex!] = fiEld1.text!
+            des[myIndex!] = fiEld2.text!}
+            else {
+                car.append(fiEld1.text!)
+                des.append(fiEld2.text!)
+                print(car) }
         
     }
     
