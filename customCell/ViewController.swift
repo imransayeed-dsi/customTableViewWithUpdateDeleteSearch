@@ -46,7 +46,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }*/
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        //let indexPath = self.tableView.indexPathForSelectedRow
+        //myIndex = indexPath?.row
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+        {
+            myIndex = indexPath.row
+        }
         if (segue.identifier == "edit") {
             let c: Int? = 1
             //let indexPath = self.tableView.indexPathForSelectedRow

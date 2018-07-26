@@ -51,7 +51,7 @@ class addViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if isEditOn == 1{
+        if isEditOn == 1 {
         fiEld1!.text = car[myIndex!]
             fiEld2!.text = des[myIndex!]
             
