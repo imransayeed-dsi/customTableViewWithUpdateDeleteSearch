@@ -46,10 +46,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RFT-1w-TqX">
-                                                    <rect key="frame" x="0.0" y="0.0" width="338" height="95"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="318.66666666666669" height="95"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aYr-oZ-nkd">
-                                                            <rect key="frame" x="0.0" y="7.6666666666666643" width="338" height="80"/>
+                                                            <rect key="frame" x="0.0" y="7.6666666666666643" width="318.66666666666669" height="80"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZKc-hu-Eoy">
                                                                     <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
@@ -97,10 +97,10 @@
                                                                     </constraints>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4ij-H1-HQK">
-                                                                    <rect key="frame" x="155" y="30.333333333333336" width="183" height="19.333333333333336"/>
+                                                                    <rect key="frame" x="155" y="30.333333333333336" width="163.66666666666663" height="19.333333333333336"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label3sfdsfzfssaa" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Kk-9f-qE5">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="183" height="19.333333333333332"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="163.66666666666666" height="19.333333333333332"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -118,7 +118,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTb-dj-nlm">
-                                                    <rect key="frame" x="338" y="29" width="37" height="36"/>
+                                                    <rect key="frame" x="318.66666666666669" y="29.666666666666671" width="56.333333333333314" height="36"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <state key="normal" title="Edit"/>
                                                     <connections>
@@ -132,7 +132,7 @@
                                                 <constraint firstItem="RFT-1w-TqX" firstAttribute="leading" secondItem="0uG-tY-GOK" secondAttribute="leading" id="V2y-1v-RKY"/>
                                                 <constraint firstItem="cTb-dj-nlm" firstAttribute="leading" secondItem="RFT-1w-TqX" secondAttribute="trailing" id="dTE-Co-hOq"/>
                                                 <constraint firstItem="cTb-dj-nlm" firstAttribute="centerY" secondItem="RFT-1w-TqX" secondAttribute="centerY" id="eid-6h-wNq"/>
-                                                <constraint firstItem="RFT-1w-TqX" firstAttribute="width" secondItem="0uG-tY-GOK" secondAttribute="width" multiplier="0.9" id="ij8-ud-etp"/>
+                                                <constraint firstItem="RFT-1w-TqX" firstAttribute="width" secondItem="0uG-tY-GOK" secondAttribute="width" multiplier="0.85" id="ij8-ud-etp"/>
                                                 <constraint firstItem="RFT-1w-TqX" firstAttribute="top" secondItem="0uG-tY-GOK" secondAttribute="top" id="leM-67-3dk"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -272,12 +272,13 @@
                                             <action selector="field1:" destination="Zy0-rO-WJJ" eventType="editingDidEnd" id="2Z5-nv-pze"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a simple description" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HY2-qq-AeM">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" text="Enter description" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uB0-hu-sLq">
                                         <rect key="frame" x="10" y="137" width="345" height="132"/>
-                                        <nil key="textColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ase-9c-iUK">
                                         <rect key="frame" x="10" y="274" width="345" height="132"/>
                                         <state key="normal" title="Save"/>
@@ -287,14 +288,16 @@
                                     </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="uB0-hu-sLq" firstAttribute="top" secondItem="tU9-y4-Nqe" secondAttribute="bottom" constant="5" id="0pJ-os-xPa"/>
                                     <constraint firstItem="ase-9c-iUK" firstAttribute="leading" secondItem="7I6-3T-Jln" secondAttribute="leading" constant="10" id="34L-6Q-0hg"/>
                                     <constraint firstItem="tU9-y4-Nqe" firstAttribute="leading" secondItem="7I6-3T-Jln" secondAttribute="leading" constant="10" id="3kH-ZA-HrD"/>
-                                    <constraint firstAttribute="trailing" secondItem="HY2-qq-AeM" secondAttribute="trailing" constant="10" id="Cgw-e7-2Sy"/>
                                     <constraint firstAttribute="trailing" secondItem="ase-9c-iUK" secondAttribute="trailing" constant="10" id="CxY-NR-317"/>
                                     <constraint firstItem="tU9-y4-Nqe" firstAttribute="top" secondItem="7I6-3T-Jln" secondAttribute="top" id="GfQ-qr-hht"/>
+                                    <constraint firstAttribute="trailing" secondItem="uB0-hu-sLq" secondAttribute="trailing" constant="10" id="IJl-tD-U8P"/>
                                     <constraint firstAttribute="trailing" secondItem="tU9-y4-Nqe" secondAttribute="trailing" constant="10" id="jlS-GS-bRW"/>
-                                    <constraint firstItem="HY2-qq-AeM" firstAttribute="leading" secondItem="7I6-3T-Jln" secondAttribute="leading" constant="10" id="sZC-an-Irf"/>
                                     <constraint firstAttribute="bottom" secondItem="ase-9c-iUK" secondAttribute="bottom" id="swT-yq-PP6"/>
+                                    <constraint firstItem="uB0-hu-sLq" firstAttribute="leading" secondItem="7I6-3T-Jln" secondAttribute="leading" constant="10" id="wGc-8c-1TT"/>
+                                    <constraint firstItem="ase-9c-iUK" firstAttribute="top" secondItem="uB0-hu-sLq" secondAttribute="bottom" constant="5" id="xxf-dA-NRw"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -309,7 +312,7 @@
                     <navigationItem key="navigationItem" title="ADD entry" id="ZGJ-BT-7O9"/>
                     <connections>
                         <outlet property="fiEld1" destination="tU9-y4-Nqe" id="EX8-pm-snE"/>
-                        <outlet property="fiEld2" destination="HY2-qq-AeM" id="2y8-TI-qru"/>
+                        <outlet property="textViewField" destination="uB0-hu-sLq" id="4gE-bR-I39"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lwL-EH-6gz" userLabel="First Responder" sceneMemberID="firstResponder"/>

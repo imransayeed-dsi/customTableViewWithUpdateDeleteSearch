@@ -14,7 +14,9 @@ class addViewController: UIViewController {
     var someDescription = [String]()
     //var sometHing: String = ""
     //var someDescription: String = ""
-    @IBOutlet weak var fiEld2: UITextField!
+    //@IBOutlet weak var fiEld2: UITextField!
+    @IBOutlet weak var textViewField: UITextView!
+    
     var isEditOn: Int?
    // func editStart(_ sender: Any){
    //     sometHing[myIndex!] = car [myIndex!]
@@ -50,10 +52,11 @@ class addViewController: UIViewController {
     //}
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //textViewField.frame(forDictationResultPlaceholder: "enter description")
+        //textViewField?.placeholder
         if isEditOn == 1 {
         fiEld1!.text = car[myIndex!]
-            fiEld2!.text = des[myIndex!]
+            textViewField!.text = des[myIndex!]
             
         }
         
@@ -66,10 +69,10 @@ class addViewController: UIViewController {
     @IBAction func saveButton(_ sender: AnyObject) {
             if isEditOn == 1{
             car[myIndex!] = fiEld1.text!
-            des[myIndex!] = fiEld2.text!}
+            des[myIndex!] = textViewField.text!}
             else {
                 car.append(fiEld1.text!)
-                des.append(fiEld2.text!)
+                des.append(textViewField.text!)
                 print(car) }
         
     }
